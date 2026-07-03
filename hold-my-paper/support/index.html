@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold My Paper Support</title>
+  <meta name="description" content="Support information for Hold My Paper, a local-first Mac app for private plain-text papers.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f5f0;
+      --surface: #fffdf8;
+      --text: #1d1a16;
+      --muted: #665f56;
+      --accent: #73543b;
+      --line: rgba(29, 26, 22, 0.14);
+      --shadow: rgba(29, 26, 22, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151310;
+        --surface: #1d1a16;
+        --text: #f4efe8;
+        --muted: #b8aea3;
+        --accent: #d7b894;
+        --line: rgba(244, 239, 232, 0.16);
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 34px 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.14rem;
+      color: var(--accent);
+    }
+
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .lede {
+      max-width: 600px;
+      margin: 18px auto 0;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Hold My Paper</p>
+      <h1>Support</h1>
+      <p class="lede">Help and contact information for Hold My Paper, a focused Mac app for private plain-text papers.</p>
+    </header>
+
+    <h2>Contact</h2>
+    <p>Need help or want to report an issue?</p>
+    <p>Email: <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a></p>
+
+    <h2>Opening the app</h2>
+    <p>Hold My Paper lives in the Mac menu bar. Click the pen-nib menu bar icon to open your papers, Browser, backup tools, preferences, and Quit command.</p>
+
+    <h2>Importing and exporting text</h2>
+    <p>Use the menu bar actions to import TXT files, export papers, export Books, or create an Export Package.</p>
+
+    <h2>Backup and restore</h2>
+    <p>Use Backup to ZIP to create a local backup. Use Restore from ZIP to restore a Hold My Paper backup. Restore validates the archive before replacing the current workspace.</p>
+
+    <h2>History and Recovery</h2>
+    <p>History and Recovery help you revisit older local snapshots and recover previous paper states.</p>
+
+    <h2>Local automation</h2>
+    <p>The quickpad:// feature is off by default. Enable "Let Other Apps Add Text Here" from the menu only if you want local apps to append or prepend text.</p>
+
+    <h2>Privacy</h2>
+    <p>Hold My Paper does not require an account and does not use analytics, tracking, ads, cloud sync, or third-party SDKs.</p>
+    <p>Privacy Policy: <a href="https://taruxoph.github.io/privacy-policy/hold-my-paper/privacy/">https://taruxoph.github.io/privacy-policy/hold-my-paper/privacy/</a></p>
+
+    <footer>
+      Hold My Paper for macOS.
+    </footer>
+  </main>
+</body>
+</html>
