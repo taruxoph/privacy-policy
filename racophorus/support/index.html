@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Racophorus Support</title>
+  <meta name="description" content="Support and contact information for Racophorus, a privacy focused macOS utility that keeps your Mac awake when you choose.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f4f1e9;
+      --surface: #fffdf7;
+      --text: #181713;
+      --muted: #5e594b;
+      --accent: #6b5700;
+      --accent-soft: #f5d900;
+      --line: rgba(24, 23, 19, 0.14);
+      --shadow: rgba(24, 23, 19, 0.09);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #11110f;
+        --surface: #1a1916;
+        --text: #f8f5e9;
+        --muted: #c5beaa;
+        --accent: #f5d900;
+        --accent-soft: #f5d900;
+        --line: rgba(248, 245, 233, 0.16);
+        --shadow: rgba(0, 0, 0, 0.34);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(780px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 36px 26px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      box-shadow: 0 18px 48px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 28px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .mark {
+      width: 54px;
+      height: 10px;
+      margin: 0 auto 20px;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      border-radius: 999px;
+      background: var(--accent-soft);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 750;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1.05;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: var(--accent);
+      font-size: 1.14rem;
+    }
+
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .lede {
+      max-width: 620px;
+      margin: 18px auto 0;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        margin: 16px auto;
+        padding: 28px 20px;
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark" aria-hidden="true"></div>
+      <p class="eyebrow">Racophorus for macOS</p>
+      <h1>Support</h1>
+      <p class="lede">Help and contact information for Racophorus, a focused Mac utility for precise awake sessions.</p>
+    </header>
+
+    <h2>Contact</h2>
+    <p>Need help, want to report an issue, or have feedback about Racophorus?</p>
+    <p>Email <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>.</p>
+
+    <h2>Starting an awake session</h2>
+    <p>Open Racophorus from the Mac menu bar. Choose System when tasks should continue while the display may rest, or Display and System when both the display and the Mac should remain awake. Then select a duration or start an indefinite session.</p>
+
+    <h2>Choosing an exact end time</h2>
+    <p>Open Settings and use Keep awake until to choose the exact date and time when sleep should be allowed again.</p>
+
+    <h2>Ending a session</h2>
+    <p>Select Allow Sleep from the Racophorus panel. This releases the active awake session and allows macOS to sleep normally again.</p>
+
+    <h2>Shortcuts and quick access</h2>
+    <p>You can configure the global shortcut in Settings. Racophorus also provides App Shortcuts for Keep Awake, Allow Sleep, and Check Status.</p>
+
+    <h2>Battery warnings</h2>
+    <p>Optional battery warnings can be enabled in Settings. Choose the warning threshold that works for you. A warning does not interrupt the active awake session.</p>
+
+    <h2>If your Mac still sleeps</h2>
+    <p>Confirm that Racophorus is running and that the panel shows Keeping Awake. System mode allows the display to rest, while Display and System mode keeps both active. Hardware and macOS safety behavior, including sleep caused by closing a MacBook lid, cannot be overridden by Racophorus.</p>
+
+    <h2>Privacy</h2>
+    <p>Racophorus does not require an account and does not use analytics, tracking, ads, or telemetry. Preferences remain on your Mac.</p>
+    <p>Read the <a href="https://taruxoph.github.io/privacy-policy/racophorus/">Racophorus Privacy Policy</a>.</p>
+
+    <footer>
+      Racophorus for macOS · Precise control with privacy by design
+    </footer>
+  </main>
+</body>
+</html>
