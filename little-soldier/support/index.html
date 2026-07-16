@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Little Soldier Support</title>
+  <meta name="description" content="Support and contact information for Little Soldier, a private clipboard manager with on-device OCR for macOS.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #071f47;
+      --surface: #0b2f67;
+      --text: #ffffff;
+      --muted: #c9daf1;
+      --accent: #ffe000;
+      --accent-text: #17335b;
+      --line: rgba(255, 255, 255, 0.18);
+      --shadow: rgba(0, 0, 0, 0.30);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #eaf3ff;
+        --surface: #ffffff;
+        --text: #112849;
+        --muted: #536b8c;
+        --accent: #f4d500;
+        --accent-text: #112849;
+        --line: rgba(17, 40, 73, 0.14);
+        --shadow: rgba(17, 40, 73, 0.12);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top, rgba(36, 135, 255, 0.34), transparent 34rem),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(800px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 38px 28px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 24px;
+      box-shadow: 0 22px 56px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .mark {
+      width: 58px;
+      height: 12px;
+      margin: 0 auto 20px;
+      border: 1px solid rgba(0, 0, 0, 0.16);
+      border-radius: 999px;
+      background: var(--accent);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.6rem);
+      line-height: 1.04;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: var(--accent);
+      font-size: 1.16rem;
+    }
+
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .lede {
+      max-width: 640px;
+      margin: 18px auto 0;
+      font-size: 1.06rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 750;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      margin-top: 30px;
+      padding: 18px;
+      color: var(--accent-text);
+      background: var(--accent);
+      border-radius: 16px;
+      font-weight: 650;
+    }
+
+    .notice a {
+      color: var(--accent-text);
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        margin: 16px auto;
+        padding: 28px 20px;
+        border-radius: 18px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="mark" aria-hidden="true"></div>
+      <p class="eyebrow">Little Soldier for macOS</p>
+      <h1>Support</h1>
+      <p class="lede">Help and contact information for Little Soldier, your fast and private clipboard companion for Mac.</p>
+    </header>
+
+    <h2>Contact</h2>
+    <p>Need help, want to report an issue, or have feedback about Little Soldier?</p>
+    <p>Email <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>.</p>
+
+    <h2>Opening Little Soldier</h2>
+    <p>By default, Little Soldier lives in the Mac menu bar. Left-click its icon to open clipboard history. Right-click or Control-click the icon to access capture, paste, privacy, appearance, settings, and Quit commands.</p>
+    <p>You can also show Little Soldier in the Dock from the app’s presentation settings.</p>
+
+    <h2>Finding and reusing clipboard items</h2>
+    <p>Use Search to find copied text and other supported content. Click an item to preview it. Double-click an item to copy it again. Use pins, collections, categories, and day navigation to keep important content within reach.</p>
+
+    <h2>Capturing text with OCR</h2>
+    <p>Use Capture Text from Screen to select an area and recognize text locally with Apple Vision. Little Soldier can preserve lines, create a single line, detect links, recognize QR codes and barcodes, and process an image already on the clipboard.</p>
+    <p>The first screen capture explains why Screen Recording permission is needed before macOS presents its permission request.</p>
+
+    <h2>Quick Paste and Paste Stack</h2>
+    <p>Quick Paste and Paste Stack can send Command-V to another app after copying the selected content. macOS Accessibility permission is required for automated pasting. Without it, Little Soldier still copies the item and you can paste it manually.</p>
+
+    <h2>Privacy controls</h2>
+    <p>Use Privacy Mode to pause automatic history capture. Use Exclude Current App to ignore copies from a selected application. Little Soldier automatically ignores secure input, concealed or transient clipboard content, Apple Keychain, and known password managers.</p>
+    <p>Saved history is encrypted locally on your Mac. Little Soldier does not use analytics, ads, tracking, accounts, cloud sync, or a developer-operated server.</p>
+
+    <h2>Deleting clipboard history</h2>
+    <p>Delete removes one selected item after confirmation. Clear removes all unpinned history after confirmation while preserving pinned items. Clear Sensitive removes only items classified as sensitive.</p>
+
+    <h2>If screen OCR does not start</h2>
+    <p>Open System Settings, go to Privacy &amp; Security, and confirm that Screen Recording access is enabled for Little Soldier. Quit and reopen the app if macOS requests it after changing permission.</p>
+
+    <h2>If automated paste does not work</h2>
+    <p>Open System Settings, go to Privacy &amp; Security, and confirm that Accessibility access is enabled for Little Soldier. You can always use the regular copy action and press Command-V yourself.</p>
+
+    <h2>If the clipboard history is empty</h2>
+    <p>Confirm that Privacy Mode is off, at least one content type is enabled, and the source app has not been excluded. Content copied from secure fields, password managers, Apple Keychain, or concealed and transient pasteboards is intentionally ignored.</p>
+
+    <div class="notice">
+      Read the <a href="https://taruxoph.github.io/privacy-policy/little-soldier/">Little Soldier Privacy Policy</a>.
+    </div>
+
+    <footer>
+      Little Soldier for macOS · Everything you copy, always within reach
+    </footer>
+  </main>
+</body>
+</html>
