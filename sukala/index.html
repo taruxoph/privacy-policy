@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sukala Privacy Policy</title>
+  <meta name="description" content="Privacy information for Sukala, a local-first battery and system monitor for macOS.">
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #03070f;
+      --surface: #09111e;
+      --surface-soft: #0d192b;
+      --text: #f4f8ff;
+      --muted: #aebbd0;
+      --cyan: #3ddcff;
+      --blue: #2d72ff;
+      --line: rgba(89, 204, 255, 0.22);
+      --shadow: rgba(0, 24, 70, 0.48);
+    }
+
+    @media (prefers-color-scheme: light) {
+      :root {
+        color-scheme: light;
+        --bg: #edf5ff;
+        --surface: #ffffff;
+        --surface-soft: #f3f8ff;
+        --text: #0a1830;
+        --muted: #52647f;
+        --cyan: #007ca1;
+        --blue: #145ac9;
+        --line: rgba(20, 90, 201, 0.18);
+        --shadow: rgba(17, 58, 112, 0.14);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 50% -8rem, rgba(45, 114, 255, 0.38), transparent 34rem),
+        radial-gradient(circle at 100% 24rem, rgba(61, 220, 255, 0.12), transparent 28rem),
+        var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      width: min(800px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 38px 28px;
+      background: linear-gradient(160deg, var(--surface-soft), var(--surface));
+      border: 1px solid var(--line);
+      border-radius: 26px;
+      box-shadow: 0 24px 64px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 30px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .energy-mark {
+      width: 78px;
+      height: 10px;
+      margin: 0 auto 20px;
+      border-radius: 999px;
+      background: linear-gradient(90deg, var(--blue), var(--cyan));
+      box-shadow: 0 0 24px rgba(61, 220, 255, 0.34);
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--cyan);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0.17em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.65rem);
+      line-height: 1.04;
+    }
+
+    h2 {
+      margin-top: 30px;
+      color: var(--cyan);
+      font-size: 1.16rem;
+    }
+
+    .updated,
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .updated {
+      margin: 16px 0 0;
+      font-size: 0.95rem;
+    }
+
+    .lede {
+      max-width: 640px;
+      margin: 18px auto 0;
+      font-size: 1.06rem;
+    }
+
+    p,
+    li {
+      font-size: 1rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+    }
+
+    ul {
+      margin: 10px 0 0;
+      padding-left: 22px;
+    }
+
+    li + li {
+      margin-top: 6px;
+    }
+
+    a {
+      color: var(--cyan);
+      font-weight: 720;
+      overflow-wrap: anywhere;
+    }
+
+    .notice {
+      margin-top: 30px;
+      padding: 18px;
+      background: rgba(45, 114, 255, 0.12);
+      border: 1px solid var(--line);
+      border-radius: 16px;
+    }
+
+    footer {
+      margin-top: 34px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    @media (max-width: 520px) {
+      main {
+        margin: 16px auto;
+        padding: 28px 20px;
+        border-radius: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div class="energy-mark" aria-hidden="true"></div>
+      <p class="eyebrow">Sukala for macOS</p>
+      <h1>Privacy Policy</h1>
+      <p class="updated">Effective date: August 4, 2026</p>
+      <p class="lede">Sukala is a local-first battery and system monitor. Monitoring data remains on your Mac.</p>
+    </header>
+
+    <h2>1. Scope</h2>
+    <p>This Privacy Policy explains how the Sukala macOS application handles information while displaying battery, power-adapter, CPU, memory, and temperature readings.</p>
+
+    <h2>2. Data collection by the developer</h2>
+    <p>Sukala does not require an account and does not collect or transmit your monitoring data, files, usage history, contacts, location, or device identifiers to the developer.</p>
+    <p>The current app does not operate a developer server and does not include analytics, advertising, telemetry, crash-reporting, cloud synchronization, licensing, or automatic-update services.</p>
+
+    <h2>3. Information processed locally</h2>
+    <p>To provide live monitoring, Sukala reads and processes the following information locally on your Mac:</p>
+    <ul>
+      <li>battery charge, health, capacity, cycle, temperature, voltage, current, and charging-state readings;</li>
+      <li>power-source and power-adapter information;</li>
+      <li>aggregate CPU usage and used and total physical memory;</li>
+      <li>read-only CPU-temperature and adapter-input measurements when available.</li>
+    </ul>
+    <p>Sukala does not use these features to enumerate your files, applications, users, or per-process activity. It does not request hardware serial numbers, platform UUIDs, network identifiers, or other unique remote identifiers.</p>
+
+    <h2>4. Local storage and exports</h2>
+    <p>Live readings and recent operational events may be held temporarily in memory while Sukala is running. The current app does not maintain a persistent monitoring-history database.</p>
+    <p>If you choose a manual JSON or CSV export in a version that exposes that feature, the file is saved only to the local location you select. Sukala does not upload exported files.</p>
+
+    <h2>5. System Information</h2>
+    <p>When you select the graphical battery, Sukala can open Apple’s System Information app at Hardware &gt; Power. Sukala does not read, save, change, or transmit the System Information report.</p>
+
+    <h2>6. Network, analytics, advertising, and tracking</h2>
+    <p>The current Sukala app does not make network requests. It does not use analytics services, advertising SDKs, tracking technologies, fingerprinting, or third-party profiling tools.</p>
+    <p>Sukala does not show ads and does not track your activity across apps, websites, or services.</p>
+
+    <h2>7. Support and data sharing</h2>
+    <p>Sukala does not automatically create or upload support reports. If you contact the developer by email, you decide what information to include, and your email service providers process that message under their own privacy terms.</p>
+    <p>Sukala does not sell, rent, or share personal data collected by the app because the app does not collect that data.</p>
+
+    <h2>8. Retention, deletion, and your choices</h2>
+    <p>Sukala does not retain your information on developer-operated servers, so there is no server-side account or personal-data record to delete. Temporary in-memory monitoring data is discarded when the app exits.</p>
+    <p>You control any files you explicitly export and may delete them from the selected location at any time.</p>
+
+    <h2>9. Children’s privacy</h2>
+    <p>Sukala does not knowingly collect personal information from children or any other users.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>This policy may be updated if Sukala’s features or data practices change. Any future network service, such as updates, licensing, or support links, will be described here when applicable. The effective date above identifies the current version.</p>
+
+    <h2>11. Contact</h2>
+    <p>For privacy questions, contact <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>.</p>
+
+    <div class="notice">
+      Sukala currently performs monitoring only. It does not modify battery charging or write to battery hardware.
+    </div>
+
+    <h2>Policy page hosting</h2>
+    <p>This public policy page is hosted by GitHub Pages. Visiting this page may cause GitHub to process ordinary web-request information under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. This website-hosting activity is separate from the Sukala application.</p>
+
+    <footer>
+      Sukala for macOS · Local monitoring, without accounts or tracking
+    </footer>
+  </main>
+</body>
+</html>
