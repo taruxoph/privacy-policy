@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold My Papers iOS — Support</title>
+  <meta name="description" content="Help with notes, Books, themes, backups and privacy settings on iPhone and iPad.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f5f0;
+      --surface: #fffdf8;
+      --text: #1d1a16;
+      --muted: #665f56;
+      --accent: #73543b;
+      --line: rgba(29, 26, 22, 0.14);
+      --shadow: rgba(29, 26, 22, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151310;
+        --surface: #1d1a16;
+        --text: #f4efe8;
+        --muted: #b8aea3;
+        --accent: #d7b894;
+        --line: rgba(244, 239, 232, 0.16);
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 34px 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.14rem;
+      color: var(--accent);
+    }
+
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .lede {
+      max-width: 600px;
+      margin: 18px auto 0;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+  
+    a { overflow-wrap: anywhere; }
+    li { margin-top: 8px; }
+    nav { margin-top: 20px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 480px) { main { margin: 16px auto; padding: 26px 18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Hold My Papers · iPhone &amp; iPad</p>
+      <h1>Support</h1>
+      <p class="lede">Help with notes, Books, themes, backups and privacy settings on iPhone and iPad.</p>
+      <nav aria-label="Hold My Papers pages"><a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a></nav>
+    </header>
+
+    <h2>Contact the developer</h2>
+    <p>For help, bug reports or suggestions, email Andrei Constantinescu at <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>. You can write in English or Romanian.</p>
+    <p>Include your iPhone or iPad model, iOS or iPadOS version, app version, and the steps that led to the issue. Hide private writing and filenames in screenshots. Please do not send passcodes, backup archives or private notes. Avoid deleting the app as a troubleshooting step unless you have a usable external backup.</p>
+
+    <h2>Start writing and understand autosave</h2>
+    <p>Open Papers and choose New Paper. A Paper is a note; a Book groups related Papers. Give your Paper a title and tap its writing surface to edit. Changes save locally as you work. Finish Editing ends the editing session.</p>
+    <p>Autosave updates your current note; it is not an independent backup. If a save error appears, read the message and keep a copy of unsaved writing before leaving. The app works offline and does not provide built-in cloud sync.</p>
+
+    <h2>Format a note and add media</h2>
+    <p>Use the formatting controls for bold, italic, underline and checkboxes. More offers headings, Outline, Notes for footnotes, and Source View. Formatted View and Source View represent the same Markdown note.</p>
+    <p>Insert Photo adds a selected photo. Crop and Size preserve the original; Reset Photo Edits removes your adjustments. Add links and file attachments from the editor controls. Each file attachment can be up to 250 MB; some file types may not have a system preview.</p>
+
+    <h2>Organize your library</h2>
+    <p>Create Books for related notes and use Tags and subtags to connect Papers across Books. Add frequently used Papers to Shortcuts and reopen recent work through Recents. These collections reference the same Papers, rather than creating copies.</p>
+    <p>Choose Paper Status from a Paper’s menu: No Status, Needs Review, In Progress, or Ready for Now. Work in Progress contains red and yellow Papers; Ready for Now contains green Papers. A Book’s status counts follow its member Papers. Removing a Book removes its grouping, not its live Papers.</p>
+
+    <h2>Find your writing</h2>
+    <p>Pull down in Papers to open Search. Search titles and visible writing, or narrow results with filters such as photos, checkboxes, incomplete tasks, links or Tags. Open a text match to jump to its location.</p>
+    <p>Pull down inside a Paper to search that Paper and move between highlighted matches. Close Paper Search before editing. The current Paper Search interface does not offer text replacement.</p>
+
+    <h2>Personalize the app</h2>
+    <p>Open Settings to choose themes, with separate Light and Dark selections. System appearance switches between your chosen themes. Writing settings control typeface, base text size, App Ink and editor zoom.</p>
+    <p>Pills and Status Dots let you personalize metadata colors. App Icon offers adaptive and fixed choices, including Colored Auto, Colored White, Colored Black and OLED Black. Icon selection is independent of the writing theme; iOS controls system Clear and Tinted appearances.</p>
+
+    <h2>Create a library backup</h2>
+    <p>In Backup &amp; Recovery, choose Papers &amp; Books Backup for a verified ZIP of your library, including formatting, Tags, photos, attachments, Book membership and order, status markers, Shortcuts, Recents, Opened dates and pill/status-dot appearance.</p>
+    <p>Complete Backup also archives History and Recovery copies. Save your backup through Files somewhere you can access independently of the app and device. Backups are not encrypted by Hold My Papers. Keep a separate, current backup before erasure, uninstalling or replacing your library.</p>
+
+    <h2>Restore a backup</h2>
+    <p>In Backup &amp; Recovery, choose Restore from Backup and select a supported backup ZIP or folder through Files. The app validates the archive and asks for confirmation. Restore replaces the current Papers and Books; it does not merge libraries. Back up your current library first if you want to keep it.</p>
+    <p>Current backups restore saved library organization. Older backups remain supported but cannot restore information they did not contain. History, Recovery and The Basket are not imported by library restore, including from Complete Backup.</p>
+    <p>If restore reports that reopening is required, close and reopen the app so its retained transaction can complete recovery. Do not delete the app or discard backups as a workaround.</p>
+
+    <h2>History, Recovery and The Basket</h2>
+    <p>History records events with available snapshots; it is not a complete version of every keystroke. Recovery Copies in Backup &amp; Recovery let you inspect a saved copy before restoring it. Restoring a matching copy can replace a current Paper’s content.</p>
+    <p>The Basket contains deleted Papers and removed Book groupings. Inspect an entry and use Restore when available. Empty The Basket permanently removes its entries after confirmation, while History and Recovery remain separate.</p>
+
+    <h2>Import, export and print</h2>
+    <p>Import Writing accepts supported UTF-8 TXT and Markdown documents. A formatted TextBundle import brings its included photos and files. Import Folder as Book imports supported TXT and Markdown notes from a folder and its subfolders.</p>
+    <p>Export Markdown for editable source. Use TextBundle to package a Paper with media: Editable Copy retains app-specific metadata; Portable Copy prepares supported media for other apps. TXT, PDF and printing are text-only renditions. App Access does not protect exported files; their privacy depends on the destination.</p>
+
+    <h2>App Access and forgotten passcodes</h2>
+    <p>Settings &gt; Privacy &amp; Access offers Open Access, biometrics with the fallback provided by iOS, or a separate 4–8 character app passcode. App Access protects viewing; it does not add separate encryption to notes or exported files.</p>
+    <p>Forgot App Passcode? uses device authentication to return to Open Access without deleting Papers or Books. The developer cannot read your passcode or access your local notes. The Privacy Shield conceals the workspace when the app moves into the background.</p>
+
+    <h2>Erase demo content or reset the workspace</h2>
+    <p>Erase Demo Content removes introductory Papers and Books and their safety examples, even if you edited or renamed them. Your own Papers remain; those inside a demo Book become Loose Papers. If only examples remain, the app keeps a new blank Paper.</p>
+    <p>Emergency Reset &gt; Erase All Local Content permanently removes the previous local content and creates a fresh starter tour, including labeled demo safety copies. Appearance and App Access preferences remain. Neither action deletes backups or exports already outside the app. Read the confirmation carefully and make a backup first if you need the content.</p>
+
+    <h2>Apple Shortcuts and privacy</h2>
+    <p>Apple Shortcuts actions can create a Paper, open one or append text. Unlock the app when required by App Access.</p>
+    <p>Hold My Papers requires no account or subscription and has no ads, tracking or third-party analytics. Read the <a href="../privacy/">Privacy Policy</a> for local storage, system services, backups and support correspondence.</p>
+
+    <footer>Hold My Papers for iPhone and iPad · © 2026 Andrei Constantinescu</footer>
+  </main>
+</body>
+</html>
