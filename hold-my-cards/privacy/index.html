@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold My Cards Privacy Policy</title>
+  <meta name="description" content="How Hold My Cards handles your information, on your device and when you contact support.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f5f0;
+      --surface: #fffdf8;
+      --text: #1d1a16;
+      --muted: #665f56;
+      --accent: #73543b;
+      --line: rgba(29, 26, 22, 0.14);
+      --shadow: rgba(29, 26, 22, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151310;
+        --surface: #1d1a16;
+        --text: #f4efe8;
+        --muted: #b8aea3;
+        --accent: #d7b894;
+        --line: rgba(244, 239, 232, 0.16);
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 34px 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.14rem;
+      color: var(--accent);
+    }
+
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .lede {
+      max-width: 600px;
+      margin: 18px auto 0;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+  
+    a { overflow-wrap: anywhere; }
+    li { margin-top: 8px; }
+    nav { margin-top: 20px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 480px) { main { margin: 16px auto; padding: 26px 18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Hold My Cards</p>
+      <h1>Privacy Policy</h1>
+      <p class="lede">How Hold My Cards handles your information, on your device and when you contact support.</p>
+      <nav aria-label="Hold My Cards pages"><a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a></nav>
+    </header>
+
+    <p>Last updated: September 30, 2026</p>
+    <p>This policy explains how Hold My Cards for iPhone, developed by Andrei Constantinescu, handles information. Questions can be sent to <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>.</p>
+
+    <h2>1. No account, advertising or tracking</h2>
+    <p>Hold My Cards does not require an account. The app does not send your card collection, photos or usage activity to the developer or to a developer-operated server. It contains no advertising SDKs, third-party analytics services or cross-app tracking tools.</p>
+
+    <h2>2. Information stored on your device</h2>
+    <p>The app stores the card information you save, such as card names, issuers, optional cardholder names and display identifiers, QR or barcode content, favorites, card order and appearance choices. Card contents are encrypted locally using AES-GCM. The local encryption key is held in the iOS Keychain and is restricted to the device.</p>
+    <p>Preferences such as language, appearance, font, background and selected card are stored locally. The app does not upload these preferences to the developer.</p>
+
+    <h2>3. Camera and photo access</h2>
+    <p>Camera access is used to scan QR codes and barcodes when you choose the scanning feature. The system photo picker lets you select a photo or screenshot for import; the app does not browse your entire photo library.</p>
+    <p>Barcode detection and text recognition are performed on your device. The selected image is processed for the import flow and is not retained as a card attachment. The app saves the card information you choose to keep, not the original image or all text found in it. The app does not upload camera images or selected photos to the developer.</p>
+    <p>You can manage camera permission in iOS Settings and use manual entry instead.</p>
+
+    <h2>4. App lock and biometric authentication</h2>
+    <p>Optional app lock uses a password verifier stored in the iOS Keychain, not your plaintext app password. If you enable Face ID or Touch ID, iOS performs biometric authentication. Hold My Cards does not receive or store your facial or fingerprint data.</p>
+    <p>Backup and restore use system authentication to protect access. App lock controls access to the app and does not disable your chosen Home Screen widgets. App lock credentials are not included in exported card backups.</p>
+
+    <h2>5. Home Screen widgets</h2>
+    <p>To display your selected cards, the app shares a limited encrypted snapshot with its own widget extension on the same device. This snapshot contains card IDs, names, issuers, favorite status, codes, effective card themes, language and display font. It does not include cardholder names, display identifiers or notes.</p>
+    <p>The widget snapshot uses a separate encryption key shared only between the app and its extension. It is stored with file protection and excluded from device backup. This is local communication between the app and widget, not transmission to the developer.</p>
+    <p>iOS controls widget refresh and privacy presentation. A previously rendered widget may remain visible until the system updates it. You can change or remove widgets through iOS.</p>
+
+    <h2>6. Optional device motion</h2>
+    <p>If you enable Subtle card motion, device motion readings are used locally to animate decorative card surfaces. This feature is off by default. Motion samples are not saved or transmitted by the app. You can disable the feature in Settings; Reduce Motion also disables it.</p>
+
+    <h2>7. Backups and services you choose</h2>
+    <p>You can manually export a password-protected, encrypted .hmcbackup file containing your cards and portable preferences. The app encrypts the file before handing it to the iOS file picker. Local encryption keys, app lock credentials and biometric settings are not exported.</p>
+    <p>You decide where to save or share the file. If you choose iCloud Drive or another storage provider, that provider handles the file under its own terms and privacy policy. Hold My Cards does not operate a cloud synchronization or backup service and does not receive your exported backup.</p>
+    <p>Any device-level backup or diagnostic services you enable in iOS are managed separately by Apple. The app's device-only encryption key is not transferred through its manual backup; use the password-protected export to move your cards to another iPhone.</p>
+
+    <h2>8. Your choices and deletion</h2>
+    <p>You can delete individual cards in the app, remove Home Screen widgets and change your local preferences. Removing the app deletes its local app storage, subject to iOS behavior; iOS may retain Keychain items separately. Copies in previously exported files or device backups are not deleted when you delete a card or uninstall the app. Manage those copies through the storage service or backup settings you used.</p>
+    <p>The developer cannot access your local card collection, reset your app password or decrypt a backup for which you have lost the password.</p>
+
+    <h2>9. Support emails</h2>
+    <p>If you contact support, your email address, message and any attachments you choose to send are received by the developer and processed through the email provider to answer your request and investigate the issue. This is separate from the app's local operation. Please avoid sending passwords, private card codes or backup files.</p>
+    <p>Support correspondence is kept as needed to handle and follow up on the request and meet any applicable obligations. You can contact the same address to request deletion of your correspondence, subject to any required retention.</p>
+
+    <h2>10. This website</h2>
+    <p>These support and privacy pages are hosted on GitHub Pages. They contain no added analytics, tracking scripts or advertising. GitHub may process technical information about website requests under the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>. Visiting this website is separate from using the app.</p>
+
+    <h2>11. Changes and contact</h2>
+    <p>This policy may be updated if the app's features or data practices change. The date above identifies the latest revision.</p>
+    <p>For privacy questions or support, contact Andrei Constantinescu at <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>.</p>
+
+    <footer>Hold My Cards for iPhone · © 2026 Andrei Constantinescu</footer>
+  </main>
+</body>
+</html>

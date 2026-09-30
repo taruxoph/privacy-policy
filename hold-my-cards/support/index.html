@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hold My Cards Support</title>
+  <meta name="description" content="Help with your cards, widgets, backups and app settings.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #f7f5f0;
+      --surface: #fffdf8;
+      --text: #1d1a16;
+      --muted: #665f56;
+      --accent: #73543b;
+      --line: rgba(29, 26, 22, 0.14);
+      --shadow: rgba(29, 26, 22, 0.08);
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #151310;
+        --surface: #1d1a16;
+        --text: #f4efe8;
+        --muted: #b8aea3;
+        --accent: #d7b894;
+        --line: rgba(244, 239, 232, 0.16);
+        --shadow: rgba(0, 0, 0, 0.28);
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", sans-serif;
+      line-height: 1.62;
+    }
+
+    main {
+      width: min(760px, calc(100% - 32px));
+      margin: 48px auto;
+      padding: 34px 24px;
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      box-shadow: 0 18px 44px var(--shadow);
+    }
+
+    header {
+      padding-bottom: 26px;
+      border-bottom: 1px solid var(--line);
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0 0 10px;
+      color: var(--accent);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(2rem, 6vw, 3.5rem);
+      line-height: 1;
+    }
+
+    h2 {
+      margin-top: 28px;
+      font-size: 1.14rem;
+      color: var(--accent);
+    }
+
+    .lede,
+    footer {
+      color: var(--muted);
+    }
+
+    .lede {
+      max-width: 600px;
+      margin: 18px auto 0;
+      font-size: 1.05rem;
+    }
+
+    p {
+      margin: 10px 0 0;
+      font-size: 1rem;
+    }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    footer {
+      margin-top: 32px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+      font-size: 0.92rem;
+      text-align: center;
+    }
+  
+    a { overflow-wrap: anywhere; }
+    li { margin-top: 8px; }
+    nav { margin-top: 20px; }
+    a:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
+    @media (max-width: 480px) { main { margin: 16px auto; padding: 26px 18px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="eyebrow">Hold My Cards</p>
+      <h1>Support</h1>
+      <p class="lede">Help with your cards, widgets, backups and app settings.</p>
+      <nav aria-label="Hold My Cards pages"><a href="../support/">Support</a> · <a href="../privacy/">Privacy Policy</a></nav>
+    </header>
+
+    <h2>Contact the developer</h2>
+    <p>For help, bug reports or feature suggestions, email Andrei Constantinescu at <a href="mailto:andrei.cristian.costa@gmail.com">andrei.cristian.costa@gmail.com</a>. You can write in English or Romanian.</p>
+    <p>When reporting a problem, include your iPhone model, iOS version, app version and the steps that led to the issue. If you send a screenshot, hide personal card names, numbers and codes first. Please do not send passwords, backup files or private card data.</p>
+
+    <h2>Add a card from your camera or photo library</h2>
+    <p>Tap + in the wallet, then choose Manual, Scan or Photo. Photo lets you select a picture or screenshot from your photo library. Review the detected name and code before saving. If an image contains several supported codes, choose the one you want.</p>
+    <p>Supported formats are QR Code, Code 128, EAN-13 and EAN-8. Use a clear image showing the complete code and its surrounding blank space. The app checks that a code can be reproduced and read back before accepting it.</p>
+
+    <h2>Find and display your cards</h2>
+    <p>Search your collection, mark frequently used cards as Favorites or touch and hold a card to rename it, change its theme or rearrange your cards. Tap a collapsed card to show its code, then tap the expanded card to open its details.</p>
+    <p>In card details, choose Enlarge code for a fullscreen view. The screen stays awake while this view is open. Saved cards can be displayed offline.</p>
+    <p>Hold My Cards supports static codes. It does not refresh rotating or time-limited codes, make payments or guarantee acceptance by every issuer or scanner. If a code is not accepted, check its format and content against the original card and contact the issuer where necessary.</p>
+
+    <h2>Personalize your wallet</h2>
+    <p>Open Settings to choose your language, light or dark appearance, card theme collection, display font, background and app icon. You can select individual card themes or enable automatic colors. Subtle card motion is optional and is disabled when Reduce Motion is enabled.</p>
+
+    <h2>Add a Home Screen widget</h2>
+    <p>Add the Hold My Cards widget from the iPhone widget gallery. Touch and hold the widget, choose Edit Widget, then select a card. Each widget has its own card selection.</p>
+    <p>If a card is unavailable or a widget looks out of date, unlock your iPhone and open Hold My Cards. Check that the card still exists and select it again in Edit Widget if needed. iOS controls when widgets refresh, so changes may not appear immediately. App lock does not disable Home Screen widgets; remove a widget if you do not want that card displayed there.</p>
+
+    <h2>Create and restore an encrypted backup</h2>
+    <p>In Settings, open Backup &amp; Restore and choose Create encrypted backup. Authenticate when prompted, choose a backup password and save the file through the iOS file picker. Save it somewhere you can access if you lose or replace your iPhone.</p>
+    <p>To restore, choose Restore from backup, select your .hmcbackup file and enter its password. Review the import summary and choose whether to restore the saved order and preferences. You can also restore the file on another iPhone with Hold My Cards.</p>
+    <p>Backups are manual, not automatic cloud synchronization. Keep an up-to-date backup and remember its password. The developer cannot recover a lost backup password or card data missing from your backup. Deleting the app before creating a backup can cause loss of your local cards.</p>
+
+    <h2>App password and Face ID</h2>
+    <p>Enable App lock in Settings to protect access with an app password and optional Face ID or Touch ID. If biometrics are unavailable, use your app password. Your app password is separate from your backup password and your iPhone passcode.</p>
+    <p>The developer cannot reset your app password. If you can still unlock the app with biometrics, you can turn off app lock from the unlocked app in Settings and configure it again. Avoid deleting the app as a troubleshooting step unless you have a usable backup.</p>
+
+    <h2>Privacy</h2>
+    <p>Hold My Cards does not require an account and includes no ads, tracking or third-party analytics. Card data is encrypted locally; photo analysis happens on your device.</p>
+    <p>Read the <a href="../privacy/">Hold My Cards Privacy Policy</a> for details about local storage, permissions, widgets, backups and support emails.</p>
+
+    <footer>Hold My Cards for iPhone · © 2026 Andrei Constantinescu</footer>
+  </main>
+</body>
+</html>
