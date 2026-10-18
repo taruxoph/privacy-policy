@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HealthMe Support</title>
+<meta name="description" content="Help with HealthMe on iPhone and Apple Watch.">
+<style>
+:root { color-scheme: light dark; --bg:#F3F5F8; --surface:#FFFFFF; --text:#34383D; --muted:#6D7278; --accent:#0066FF; --line:#DCE1E8; }
+@media(prefers-color-scheme:dark) { :root { --bg:#101114; --surface:#1C1E23; --text:#F2F4F7; --muted:#A6AFBD; --accent:#80B3FF; --line:#363A42; } }
+* { box-sizing:border-box; }
+body { margin:0; background:var(--bg); color:var(--text); font:17px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif; }
+main { max-width:780px; margin:40px auto; padding:36px; background:var(--surface); border:1px solid var(--line); border-radius:28px; }
+header { border-bottom:1px solid var(--line); padding-bottom:24px; }
+.brand { color:var(--accent); font-weight:700; margin:0 0 8px; }
+h1 { font-size:clamp(2rem,6vw,3rem); line-height:1.15; margin:0; letter-spacing:-.03em; }
+h2 { font-size:1.2rem; margin:30px 0 8px; line-height:1.35; }
+p { margin:12px 0; }
+.lede,footer { color:var(--muted); }
+nav { display:flex; flex-wrap:wrap; gap:12px 24px; margin-top:20px; }
+a { color:var(--accent); text-underline-offset:4px; overflow-wrap:anywhere; }
+nav a { display:inline-flex; align-items:center; min-height:44px; font-weight:600; }
+a:focus-visible { outline:3px solid var(--accent); outline-offset:4px; border-radius:4px; }
+li { margin:8px 0; }
+footer { margin-top:32px; padding-top:20px; border-top:1px solid var(--line); }
+@media(max-width:600px) { main { margin:16px; padding:24px 20px; border-radius:22px; } }
+</style>
+</head>
+<body>
+<main>
+<header>
+<p class="brand">HealthMe</p>
+<h1>Support</h1>
+<p class="lede">Help with HealthMe on iPhone and Apple Watch.</p>
+<nav aria-label="HealthMe pages"><a href="../support/" aria-current="page">Support</a><a href="../privacy/">Privacy Policy</a></nav>
+</header>
+<h2>Contact the developer</h2>
+<p>For help, bug reports or feature suggestions, email Andrei Constantinescu at <a href="mailto:andrei.cristian.costa@gmail.com?subject=HealthMe%20Support">andrei.cristian.costa@gmail.com</a>. You can write in English or Romanian.</p>
+<p>Include your iPhone or Apple Watch model, operating system version, HealthMe version and the steps that led to the issue. Describe the problem without sharing health records. If you choose to send a screenshot, hide personal and health information first. Do not send passwords, Apple Health exports or your local database.</p>
+<h2>Missing or older measurements</h2>
+<p>HealthMe reads data already recorded in Apple Health; it does not take new measurements. First check whether the relevant records appear in Apple Health and review the access granted to HealthMe. In HealthMe Settings, use Update access if you need to review the requested data types.</p>
+<p>You can use Refresh data to read existing records again. It cannot make Apple Watch take a measurement or force Apple Health synchronization. Background delivery and complication refresh are controlled by Apple; wearing the watch does not guarantee a new record for every metric at every moment.</p>
+<h2>Scores and history</h2>
+<p>Stress Radar, Recovery, Body Energy and Sleep score are HealthMe wellness estimates, not diagnoses or measurements of mental health or stored physical energy. Availability depends on the recorded data. Scores from different apps can use different definitions and are not interchangeable.</p>
+<p>The timestamp tells you when the displayed data applies, not simply when you opened the app. Gaps can occur when there is not enough usable data. Do not delete the app or its data as a first troubleshooting step: doing so can remove locally saved history.</p>
+<h2>iPhone and Apple Watch</h2>
+<p>Install and open HealthMe on each device and choose the Health access you want to grant. To share supported scores, use the explicit iPhone and Apple Watch association option in HealthMe Settings. Device connectivity and Apple's delivery schedule affect when updates arrive.</p>
+<p>For complications, add HealthMe through the watch face editor and select a metric. If a complication is out of date, open HealthMe on the watch and check the available data. The system controls when watch faces update.</p>
+<h2>Appearance and navigation</h2>
+<p>Settings includes language, appearance and app icon choices. Tap a dashboard card to open its details. On iPhone, swipe right in a detail page to go back. Trends provides dedicated metric pages and selectable time ranges.</p>
+<h2>Privacy and deleting local data</h2>
+<p>HealthMe does not require an account and has no advertising or tracking. Its health analysis runs on your device. Read the <a href="../privacy/">Privacy Policy</a> for details about Health access, local storage, device sharing and support emails.</p>
+<p>Settings → Delete HealthMe data removes the local health-data copy and stops analysis on that device. Apple Health records are not deleted. The associated device must respond to confirm removal of shared scores; stop its local analysis separately if needed.</p>
+<h2>Not for medical emergencies</h2>
+<p>HealthMe is for general wellness and information, not diagnosis, treatment or emergency monitoring. If you have symptoms or health concerns, seek professional medical advice. In an emergency, contact your local emergency services.</p>
+<footer>HealthMe for iPhone and Apple Watch · © 2026 Andrei Constantinescu</footer>
+</main>
+</body>
+</html>
